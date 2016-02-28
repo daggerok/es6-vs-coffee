@@ -6,7 +6,7 @@ holy war: ES6 vs CoffeeScript
 nothing is change... less talk, more code
 
 ```shell
-npm start
+$ npm start
 ```
 
 **note (for linux users)**
