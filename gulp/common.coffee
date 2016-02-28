@@ -23,6 +23,6 @@ module.exports  =
   bundleCoffee:   'bundle.coffee.js'
   vendorDir:      vendorDir
   cssFiles: [
-    "#{@vendorDir}/bootstrap/dist/css/bootstrap.css"
-    "#{@srcDir}/#{@mainCss}"
+    "#{vendorDir}/bootstrap/dist/css/bootstrap.css"
+    "#{srcDir}/#{mainCss}"
   ]
