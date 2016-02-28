@@ -1,4 +1,4 @@
-{gulp, browserify, srcDir, mainCoffee, bundleCoffee, debug, sources, handle, buildDir} = require './common'
+{gulp, browserify, srcDir, mainCoffee, bundleCoffee, debug, sources, handle, buildDir, livereload} = require './common'
 
 gulp.task 'coffee', ->
   return browserify
@@ -12,3 +12,4 @@ gulp.task 'coffee', ->
     .on('error', handle)
     .pipe(sources bundleCoffee)
     .pipe(gulp.dest buildDir)
+    .pipe(do livereload)

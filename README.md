@@ -3,7 +3,7 @@ es6-vs-coffee [![build](https://travis-ci.org/daggerok/es6-vs-coffee.svg?branch=
 
 holy war: ES6 vs CoffeeScript
 
-less talk, more code, or nothing change here...
+nothing is change... less talk, more code
 
 ```shell
 npm test

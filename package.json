@@ -6,14 +6,25 @@
     "es6": "src/main.es6",
     "coffee": "src/main.coffee"
   },
+  "local-web-server": {
+    "port": 3000,
+    "forbid": [
+      "*.json",
+      "*.ts",
+      "*.md",
+      "*.yml",
+      "*.babel.js",
+      ".gitignore"
+    ],
+    "no-cache": true
+  },
   "scripts": {
     "gulp": "gulp",
     "pregulp": "npm i",
-    "clean": "rm -rf dist*",
+    "rm": "rm -fr dist",
     "test": "npm run gulp",
     "prestart": "npm test",
-    "start": "gulp watch",
-    "serve": "ws -p 3000"
+    "start": "gulp watch & ws"
   },
   "author": "Maksim Kostromin",
   "license": "ISC",
@@ -30,7 +41,8 @@
     "gulp-babel": "^6.1.2",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.1",
-    "gulp-server-livereload": "^1.7.0",
+    "gulp-livereload": "^3.8.1",
+    "local-web-server": "^1.1.1",
     "jquery": "^2.2.1",
     "local-web-server": "^1.1.1",
     "require-dir": "^0.3.0",
@@ -38,15 +50,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daggerok/coffee-vs-es6.git"
+    "url": "git+https://github.com/daggerok/es6-vs-coffee6.git"
   },
   "keywords": [
     "gulp",
     "coffee",
     "es6",
     "gulp-babel",
-    "livereload",
-    "gulp-server-livereload",
+    "local-web-server",
+    "gulp-livereload",
     "browserify",
     "coffeeify",
     "babelify",
@@ -54,7 +66,7 @@
     "bootstrap"
   ],
   "bugs": {
-    "url": "https://github.com/daggerok/coffee-vs-es6/issues"
+    "url": "https://github.com/daggerok/es6-vs-coffee6/issues"
   },
-  "homepage": "https://github.com/daggerok/coffee-vs-es6#readme"
+  "homepage": "https://github.com/daggerok/es6-vs-coffee6#readme"
 }
